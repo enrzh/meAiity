@@ -78,8 +78,11 @@ function cmdWhoami() {
 }
 function cmdSocials() {
   addHTML("github     " + link("https://github.com/enrzh", "github.com/enrzh"));
+  addHTML("x          " + link("https://x.com/foreseeingx", "@foreseeingx"));
   addHTML("instagram  " + link("https://instagram.com/enr.zh/", "@enr.zh"));
   addHTML("linkedin   " + link("https://www.linkedin.com/in/xianjie-zhan/", "in/xianjie-zhan"));
+  addLine();
+  addHTML('<span class="dim">everything i build lives on </span>' + link("https://github.com/enrzh", "github.com/enrzh"));
 }
 function cmdGaming() {
   addHTML("steam      " + link("https://steamcommunity.com/profiles/76561198253995638/", "steam profile"));
@@ -121,8 +124,10 @@ function cmdSkills() {
 function cmdContact() {
   addLine("no public email. the scrapers go hungry.", "dim");
   addLine();
-  addHTML("DM instead → " + link("https://www.linkedin.com/in/xianjie-zhan/", "linkedin") +
+  addHTML("DM instead → " + link("https://x.com/foreseeingx", "x") +
+          " · " + link("https://www.linkedin.com/in/xianjie-zhan/", "linkedin") +
           " · " + link("https://instagram.com/enr.zh/", "instagram"));
+  addHTML("code       → " + link("https://github.com/enrzh", "github.com/enrzh"));
 }
 function fmtUptime() {
   const s = Math.floor((Date.now() - bootedAt) / 1000);
@@ -449,7 +454,8 @@ const COMMANDS = {
   help() {
     const rows = [
       ["whoami", "who is this guy"], ["socials", "find me elsewhere"],
-      ["projects", "what i build"], ["skills", "the stack"],
+      ["projects", "what i build"], ["github", "the source code"],
+      ["skills", "the stack"],
       ["gaming", "steam / faceit / cs2"], ["contact", "reach me (no email)"],
       ["ls", "look around"], ["cat FILE", "read a file"],
       ["neofetch", "system info"], ["theme", "change phosphor colour"],
@@ -463,6 +469,15 @@ const COMMANDS = {
   },
   whoami: cmdWhoami,
   socials: cmdSocials, links: cmdSocials, social: cmdSocials,
+  github() {
+    addHTML("→ " + link("https://github.com/enrzh", "github.com/enrzh"));
+    addLine("every project below is open source there.", "dim");
+  },
+  x() {
+    addHTML("me    → " + link("https://x.com/foreseeingx", "@foreseeingx"));
+    addHTML("aiity → " + link("https://x.com/aiityapp", "@aiityapp"));
+  },
+  twitter() { COMMANDS.x(); },
   projects: cmdProjects, work: cmdProjects,
   skills: cmdSkills, stack: cmdSkills,
   gaming: cmdGaming, game: cmdGaming,

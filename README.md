@@ -8,7 +8,7 @@ Type `help`. No account, no backend, no forms — three static files and a locke
 
 ## What it is
 
-A command-driven personal site: `whoami`, `socials`, `projects`, `skills`, `gaming`, `contact`, and a few unlisted commands. Tab completes, arrows recall history, and there is a game if you dig.
+A command-driven personal site: `whoami`, `socials`, `projects`, `skills`, `gaming`, `contact`, `github`, `x`, and a few unlisted commands. Tab completes, arrows recall history, and there is a game if you dig.
 
 Part of the **aiity** family (not **mAiity**, which is maps).
 
