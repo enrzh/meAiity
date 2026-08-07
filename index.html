@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>root@me.aiity.de</title>
+<meta name="description" content="terminal access to enrico. type help.">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:title" content="root@me.aiity.de">
+<meta property="og:description" content="unauthorized access will be logged. type help.">
+<meta name="theme-color" content="#050805">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>&gt;_</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="matrix" aria-hidden="true"></canvas>
+<div id="crt">
+  <div id="term">
+    <div id="out"></div>
+    <div id="inputrow" hidden>
+      <span class="prompt"><span class="u">guest</span>@<span class="h">me.aiity.de</span>:~$ </span><span id="echo"></span><span id="cursor"></span><input id="cmdline" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="terminal input"></div>
+  </div>
+</div>
+<div id="chips" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
