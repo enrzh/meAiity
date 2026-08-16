@@ -111,7 +111,7 @@ function cmdProjects() {
   addLine();
   addHTML('<span class="cyan">aiity</span>               ' + link("https://github.com/enrzh/aiity", "github.com/enrzh/aiity"));
   addLine("                     iphone chat. agents that build mini-apps in the conversation.", "dim");
-  addLine("                     side project. still cooking. not in the store.", "dim");
+  addLine("                     on ice. discontinued for now.", "dim");
   addLine();
   addHTML('<span class="cyan">aiity.de</span>            ' + link("https://aiity.de", "aiity.de"));
   addLine("                     the family page. all of the above, in one place.", "dim");
