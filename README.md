@@ -1,33 +1,14 @@
-# meAiity
+# me.aiity.de
 
-**A terminal that is the about page.** Live at **[https://me.aiity.de/](https://me.aiity.de/)**.
+**A terminal that is the about page** — not a product in the aiity app family.
 
-Type `help`. No account, no backend, no forms — three static files and a locked-down nginx container.
+Open [me.aiity.de](https://me.aiity.de/), type `help`. Static site (HTML/CSS/JS), no account, no backend. The maps product is **mAiity** (repo: `mAiity`) — currently on ice, with no site up.
 
-> **Status: public.** Static site only. Nothing to install; credentials cannot leak because none are shipped.
-
-## What it is
-
-A command-driven personal site: `whoami`, `socials`, `projects`, `skills`, `gaming`, `contact`, `github`, `x`, and a few unlisted commands. Tab completes, arrows recall history, and there is a game if you dig.
-
-Part of the **aiity** family (not **mAiity**, which is maps).
-
-## Security posture
-
-- Self-contained: HTML + CSS + one script; no third-party scripts or analytics
-- CSP: `default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'`
-- Unprivileged nginx, read-only container, capabilities dropped, GET/HEAD only
-- No env files, API keys, or server-side data
-
-## Run locally
+Public GitHub release: [enrzh/meAiity](https://github.com/enrzh/meAiity) (plain host port in compose; no private-network bind).
 
 ```bash
+# static preview
 npx --yes serve -l 3086 .
-# or
+# or Docker (public compose: 3086:8080)
 docker compose up -d --build
-# → http://127.0.0.1:3086/
 ```
-
-## License
-
-MIT — do what you want; attribution appreciated but not required.

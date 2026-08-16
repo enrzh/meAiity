@@ -93,19 +93,33 @@ function cmdGaming() {
 function cmdProjects() {
   addLine("~/projects", "amber");
   addLine();
-  addHTML('<span class="cyan">aiity.de</span>            ' + link("https://aiity.de", "aiity.de"));
-  addLine("                     the umbrella everything else runs under.", "dim");
   addHTML('<span class="cyan">search.aiity.de</span>     ' + link("https://search.aiity.de", "search.aiity.de"));
-  addLine("                     my start page. clock, focus, quick links,", "dim");
-  addLine("                     and nothing it doesn't need.", "dim");
+  addLine("                     start page. clock, google ai search,", "dim");
+  addLine("                     quick links, one thing to focus on today.", "dim");
+  addLine();
+  addHTML('<span class="cyan">sAiity</span>              ' + link("https://github.com/enrzh/sAiity", "github.com/enrzh/sAiity"));
+  addLine("                     subtitles for whatever the mac is playing.", "dim");
+  addLine("                     on-device. signed download. macOS 26 / apple silicon.", "dim");
+  addLine();
+  addHTML('<span class="cyan">hAiity</span>              ' + link("https://enrzh.github.io/hAiity/", "enrzh.github.io/hAiity"));
+  addLine("                     habits on the iphone. each one a contribution graph.", "dim");
+  addLine("                     no server. in testflight.", "dim");
+  addLine();
+  addHTML('<span class="cyan">mAiity</span>              ' + link("https://github.com/enrzh/mAiity", "github.com/enrzh/mAiity"));
+  addLine("                     maps + nav, web and iphone.", "dim");
+  addLine("                     apple maps or your own packs. on ice.", "dim");
+  addLine();
+  addHTML('<span class="cyan">aiity</span>               ' + link("https://github.com/enrzh/aiity", "github.com/enrzh/aiity"));
+  addLine("                     iphone chat. agents that build mini-apps in the conversation.", "dim");
+  addLine("                     side project. still cooking. not in the store.", "dim");
+  addLine();
+  addHTML('<span class="cyan">aiity.de</span>            ' + link("https://aiity.de", "aiity.de"));
+  addLine("                     the family page. all of the above, in one place.", "dim");
   addLine();
   addLine("self-hosted fleet    a small datacenter pretending to be a NAS.");
   addLine("                     dozens of containers. one power bill.", "dim");
   addLine("agent                an AI with terminal access that runs parts");
   addLine("                     of my life. it restarts things at night.", "dim");
-  addLine("ios apps             native, unreleased. ship when ready™");
-  addLine("maps, archives,      if a service exists, there is a");
-  addLine("dashboards           self-hosted version of it here.", "dim");
   addLine();
   addLine("[the rest stays off the grid.]", "dark");
 }
@@ -471,7 +485,7 @@ const COMMANDS = {
   socials: cmdSocials, links: cmdSocials, social: cmdSocials,
   github() {
     addHTML("→ " + link("https://github.com/enrzh", "github.com/enrzh"));
-    addLine("every project below is open source there.", "dim");
+    addLine("the public family lives there. one source tree is private — ask.", "dim");
   },
   x() {
     addHTML("me    → " + link("https://x.com/foreseeingx", "@foreseeingx"));
